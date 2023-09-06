@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:translationY="-80dp"
+            app:srcCompat="@drawable/i_symptoms" />
+
+        <TextView
+            android:id="@+id/txt_title_about_virus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/txt_title_symptoms"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textStyle="bold"
+            android:translationY="-160dp" />
+
+        <TextView
+            android:id="@+id/txt_description_about_virus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="Recent research evaluated the survival of the COVID-19 virus on different surfaces and reported that the virus can remain viable for up to 72 hours on plastic and stainless steel, up to four hours on copper, and up to 24 hours on cardboard."
+            android:textColor="@color/black"
+            android:fontFamily="@font/nunito_sans"
+            android:translationY="-140dp" />
+        <!--thêm sao cho nó căn đều-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#808080"
+            android:translationY="-120dp" />
+
+
+        <TextView
+            android:id="@+id/txt_title_symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Corona Virus Symptoms"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:translationY="-100dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_symptoms"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/nunito_sans"
+            android:layout_height="match_parent"
+            android:translationY="-80dp"
+            />
+    </LinearLayout>
+</ScrollView>
